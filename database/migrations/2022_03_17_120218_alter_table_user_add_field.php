@@ -33,11 +33,11 @@ class AlterTableUserAddField extends Migration
     {
         //
         Schema::table('users',function(Blueprint $table) {
-            $table->dropField("surname");
-            $table->dropField("phone");
-            $table->dropField("company");
-            $table->dropField("address");
-            $table->dropField("photo");
+            $table->dropColumn("surname");
+            $table->dropColumn("phone");
+            $table->dropColumn("company");
+            $table->dropColumn("address");
+            $table->dropColumn("photo");
         });
     }
 }
